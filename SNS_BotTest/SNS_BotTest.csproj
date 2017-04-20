@@ -89,6 +89,7 @@
     <None Include="app.config">
       <SubType>Designer</SubType>
     </None>
+    <None Include="app.true_config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
