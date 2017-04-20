@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26403.7
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SNS_Bot", "SNS_Bot\SNS_Bot.csproj", "{03560099-733A-4046-9307-D75D4ADD752C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mastonet", "Mastonet\Mastonet.csproj", "{203C168A-5149-4A8B-9683-7E4C5438C82D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SNS_BotTest", "SNS_BotTest\SNS_BotTest.csproj", "{7DFF78F2-A4E9-413D-84F0-1650604B8B86}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MastodonAccessTokenGetter", "MastodonAccessTokenGetter\MastodonAccessTokenGetter.csproj", "{83A9EB9C-7F8D-45F2-9D5A-BC4AADEC8ECC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{03560099-733A-4046-9307-D75D4ADD752C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03560099-733A-4046-9307-D75D4ADD752C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03560099-733A-4046-9307-D75D4ADD752C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03560099-733A-4046-9307-D75D4ADD752C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{203C168A-5149-4A8B-9683-7E4C5438C82D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{203C168A-5149-4A8B-9683-7E4C5438C82D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{203C168A-5149-4A8B-9683-7E4C5438C82D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{203C168A-5149-4A8B-9683-7E4C5438C82D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DFF78F2-A4E9-413D-84F0-1650604B8B86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DFF78F2-A4E9-413D-84F0-1650604B8B86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DFF78F2-A4E9-413D-84F0-1650604B8B86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DFF78F2-A4E9-413D-84F0-1650604B8B86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83A9EB9C-7F8D-45F2-9D5A-BC4AADEC8ECC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83A9EB9C-7F8D-45F2-9D5A-BC4AADEC8ECC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83A9EB9C-7F8D-45F2-9D5A-BC4AADEC8ECC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83A9EB9C-7F8D-45F2-9D5A-BC4AADEC8ECC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
