@@ -32,6 +32,8 @@ namespace tweetBot.Migrations
             //    });
             //}
 
+            context.Serifs.Add(new Models.SerifData { Name = "ó¢î¸", Text = "Ç®Ç‚Ç∑Ç›Ç»Ç≥Ç¢ÅAÇ®åZÇøÇ·ÇÒÅI", Type = Models.SerifType.Oyasumi });
+
             context.SaveChanges();
             /*try { }
             catch (System.Data.Entity.Validation.DbEntityValidationException e)

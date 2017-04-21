@@ -3,6 +3,7 @@ using System.Data.Entity.Migrations;
 using Bot;
 using bot;
 using tweetBot.Models;
+using SNS_Bot;
 
 namespace tweetBot
 {
@@ -47,6 +48,8 @@ namespace tweetBot
                 case "20MinutesSpan":
                     twitterBot.SendMessageToFollowerAsync(new TsuraiWords(), SerifType.Ganbare).Wait();
                     mastodonBot.SendMessageToFollowerAsync(new TsuraiWords(), SerifType.Ganbare).Wait();
+
+                    satomi_twitter.SendMessageToFollowerAsync(new NeruWords(), SerifType.Oyasumi).Wait();
                     break;
                 case "5MinutesSpan":
                     twitterBot.SendTodayWetherAsync().Wait();

@@ -171,6 +171,7 @@
     <Compile Include="Models\SerifDataContext.cs" />
     <Compile Include="Models\WeatherHacksModel.cs" />
     <Compile Include="Moe.cs" />
+    <Compile Include="NeruWords.cs" />
     <Compile Include="Platform.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Functions.cs" />
