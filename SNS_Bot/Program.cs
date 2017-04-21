@@ -23,7 +23,9 @@ namespace tweetBot
             var twitterBot = CharacterBot.Create(CharacterType.Yarimizu_Moe, PlatFormType.Twitter, DataTableType.DataBase);
 
             var mastodonBot = CharacterBot.Create(CharacterType.Yarimizu_Moe, PlatFormType.Mastodon, DataTableType.DataBase);
-            
+
+            var satomi_twitter = CharacterBot.Create(CharacterType.Abe_Satomi, PlatFormType.Twitter, DataTableType.DataBase);
+
             switch (argments)
             {
                 case "RegularTweet":
@@ -31,6 +33,8 @@ namespace tweetBot
                     mastodonBot.FollowBackAndGreetingAsync().Wait();
                     mastodonBot.RemoveBackAsync().Wait();
 
+                    satomi_twitter.RegularPostAsync().Wait();
+                    satomi_twitter.FollowBackAndGreetingAsync().Wait();
                     twitterBot.RegularPostAsync().Wait();
                     twitterBot.FollowBackAndGreetingAsync().Wait();
                     twitterBot.RemoveBackAsync().Wait();
@@ -38,6 +42,7 @@ namespace tweetBot
 
                     mastodonBot.RePostRelationalTagAsync().Wait();
                     twitterBot.RePostRelationalTagAsync().Wait();
+                    satomi_twitter.RePostRelationalTagAsync().Wait();
                     break;
                 case "20MinutesSpan":
                     twitterBot.SendMessageToFollowerAsync(new TsuraiWords(), SerifType.Ganbare).Wait();

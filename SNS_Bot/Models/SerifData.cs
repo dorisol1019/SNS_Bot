@@ -29,6 +29,7 @@ namespace tweetBot.Models
     public enum SerifType
     {
         Normal,
-        Ganbare
+        Ganbare,
+        Oyasumi
     }
 }

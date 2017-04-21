@@ -16,7 +16,7 @@ namespace tweetBot.Controllers.Tests
         {
             SerifsController serif = new SerifsController();
             Random rand = new Random();
-            var serifDatas = serif.GetSerifs().ToArray();
+            var serifDatas = serif.GetSerifs().Where(e=>e.Name=="里美").ToArray();
 
             var serifData = serifDatas[rand.Next(serifDatas.Length)];
             serifData.IsNotNull();

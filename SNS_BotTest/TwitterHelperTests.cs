@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using SNS_Bot;
 
 namespace TwitterBot.Tests
 {
@@ -17,8 +18,8 @@ namespace TwitterBot.Tests
         [TestInitialize]
         public void Initalize()
         {
-            var moe = new Moe();
-            twitterHelper = new TwitterHelper(moe.TwitterAuthSet);
+            var character = new Satomi();
+            twitterHelper = new TwitterHelper(character.TwitterAuthSet);
             twitterHelper.Initializer();
         }
 
@@ -35,9 +36,10 @@ namespace TwitterBot.Tests
         }
 
         [TestMethod()]
-        public void UpdateStatusAsyncTest()
+        public async Task UpdateStatusAsyncTest()
         {
-            Assert.Fail();
+            await twitterHelper.UpdateStatusAsync("テスト");
+//            Assert.Fail();
         }
 
         [TestMethod()]

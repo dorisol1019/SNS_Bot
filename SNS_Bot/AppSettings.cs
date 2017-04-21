@@ -132,6 +132,32 @@ namespace SNS_Bot
                 }
             }
         }
+
+        public static class Satomi
+        {
+            public static class Twitter
+            {
+                public static string AccessToken
+                {
+                    get { return ConfigurationManager.AppSettings["Satomi.twitter.AccessToken"]; }
+                }
+
+                public static string AccessTokenSecret
+                {
+                    get { return ConfigurationManager.AppSettings["Satomi.twitter.AccessTokenSecret"]; }
+                }
+
+                public static string ConsumerKey
+                {
+                    get { return ConfigurationManager.AppSettings["Satomi.twitter.ConsumerKey"]; }
+                }
+
+                public static string ConsumerSecret
+                {
+                    get { return ConfigurationManager.AppSettings["Satomi.twitter.ConsumerSecret"]; }
+                }
+            }
+        }
     }
 }
 

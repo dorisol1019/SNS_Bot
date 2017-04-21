@@ -15,24 +15,22 @@ namespace tweetBot.Migrations
         protected override void Seed(Context.SerifDataContext context)
         {
 
-	    return;
-            var serifCSV = CSVRead.getSerifCSV("no data");
+            //var serifCSV = CSVRead.getSerifCSV(
+            //    @"none");
 
 
-
-            foreach (var serifData in serifCSV)
-            {
-                context.Serifs.AddOrUpdate(p => p.Id,
-                new Models.SerifData
-                {
-                    Id = serifData.Id,
-                    Name = serifData.Name,
-                    Text = serifData.Text,
-                    LastUsedTime = null,
-                    Type = serifData.Type
-                });
-            }
-
+            //foreach (var serifData in serifCSV)
+            //{
+            //    context.Serifs.AddOrUpdate(p => p.Id,
+            //    new Models.SerifData
+            //    {
+            //        /*Id = lastId,*/
+            //        Name = serifData.Name,
+            //        Text = serifData.Text,
+            //        LastUsedTime = null,
+            //        Type = serifData.Type
+            //    });
+            //}
 
             context.SaveChanges();
             /*try { }

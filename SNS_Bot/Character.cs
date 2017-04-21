@@ -1,4 +1,5 @@
 ﻿
+using SNS_Bot;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +10,7 @@ namespace bot
 {
     public enum CharacterType
     {
-        Yarimizu_Moe,
+        Yarimizu_Moe,Abe_Satomi
     }
 
     static public class Character
@@ -21,6 +22,9 @@ namespace bot
             {
                 case CharacterType.Yarimizu_Moe:
                     character = new Moe();
+                    break;
+                case CharacterType.Abe_Satomi:
+                    character= new Satomi();
                     break;
                 default:
                     break;
