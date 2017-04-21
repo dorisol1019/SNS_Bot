@@ -65,7 +65,7 @@ namespace Bot.Twitter
                 if (tsuraiTweet.UserId == await twitterHelper.GetMyId()) continue;
                 if (tsuraiTweet.Text.Contains("@")) continue;
                 if (tsuraiTweet.Text.Contains("＠")) continue;
-                string mes = usingDataTable.GetUseSerif(character.Name, SerifType.Ganbare, true);
+                string mes = usingDataTable.GetUseSerif(character.Name, type);
 
                 var txt = mes.Replace("{ScreenName}", tsuraiTweet.Name);
 

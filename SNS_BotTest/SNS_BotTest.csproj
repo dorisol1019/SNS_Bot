@@ -84,6 +84,8 @@
     <Compile Include="MoeTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TwitterHelperTests.cs" />
+    <Compile Include="TwitterTests.cs" />
+    <Compile Include="UsingDataBaseTableTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config">
