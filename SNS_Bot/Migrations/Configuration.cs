@@ -31,7 +31,6 @@ namespace tweetBot.Migrations
             //        Type = serifData.Type
             //    });
             //}
-
             
             context.SaveChanges();
             /*try { }

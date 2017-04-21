@@ -46,14 +46,16 @@ namespace tweetBot
                     satomi_twitter.RePostRelationalTagAsync().Wait();
                     break;
                 case "20MinutesSpan":
-                    twitterBot.SendMessageToFollowerAsync(new TsuraiWords(), SerifType.Ganbare).Wait();
-                    mastodonBot.SendMessageToFollowerAsync(new TsuraiWords(), SerifType.Ganbare).Wait();
 
-                    satomi_twitter.SendMessageToFollowerAsync(new NeruWords(), SerifType.Oyasumi).Wait();
                     break;
                 case "5MinutesSpan":
                     twitterBot.SendTodayWetherAsync().Wait();
                     mastodonBot.SendTodayWetherAsync().Wait();
+
+                    mastodonBot.SendMessageToFollowerAsync(new TsuraiWords(), SerifType.Ganbare).Wait();
+                    twitterBot.SendMessageToFollowerAsync(new TsuraiWords(), SerifType.Ganbare).Wait();
+                    satomi_twitter.SendMessageToFollowerAsync(new NeruWords(), SerifType.Oyasumi).Wait();
+
                     break;
                 default:
                     Console.WriteLine("Job is None.");
